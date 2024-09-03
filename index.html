@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Avançado</title>
+    <!-- Inclui o CSS do Flatpickr a partir de uma CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <!-- Inclui o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <!-- Formulário com campos e mensagens de erro -->
+      <form id="advanced-form">
+        <h2>Formulário Avançado</h2>
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required />
+          <span class="error-message">Nome é obrigatório</span>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+          <span class="error-message">E-mail inválido</span>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefone</label>
+          <input type="text" id="phone" name="phone" required />
+          <span class="error-message">Telefone é obrigatório</span>
+        </div>
+        <div class="form-group">
+          <label for="birthdate">Data de Nascimento</label>
+          <input type="text" id="birthdate" name="birthdate" required />
+          <span class="error-message">Data de nascimento é obrigatória</span>
+        </div>
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" required />
+          <span class="error-message">Senha é obrigatória</span>
+        </div>
+        <div class="form-group">
+          <label for="file">Upload de Arquivo</label>
+          <input type="file" id="file" name="file" required />
+          <span class="error-message">O arquivo é obrigatório</span>
+          <span class="error-message" id="file-error"
+            >Tipo de arquivo não permitido</span
+          >
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="button" id="reset-btn">Limpar</button>
+      </form>
+      <!-- Mensagem de sucesso oculta -->
+      <div id="success-message" class="success-message">
+        Dados enviados com sucesso!
+      </div>
+    </div>
+
+    <!-- Inclui o JavaScript do Flatpickr a partir de uma CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- Inclui a tradução para português do Flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+    <!-- Inclui o arquivo JavaScript personalizado -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

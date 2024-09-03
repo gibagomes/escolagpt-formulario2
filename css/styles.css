@@ -1,0 +1,73 @@
+/* Estilo geral do corpo */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Estilo do contêiner do formulário */
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do título do formulário */
+form h2 {
+  margin-bottom: 20px;
+}
+
+/* Estilo dos grupos de formulário */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Estilo dos rótulos */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilo dos campos de entrada */
+.form-group input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilo das mensagens de erro */
+.error-message {
+  display: none;
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Estilo da mensagem de sucesso */
+.success-message {
+  display: none;
+  color: green;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+/* Estilo do botão de envio */
+button {
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #1e88e5;
+}
